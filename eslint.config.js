@@ -5,6 +5,11 @@ const expoConfig = require('eslint-config-expo/flat');
 module.exports = defineConfig([
   expoConfig,
   {
+    extends: [
+      'plugin:@react-three/recommended'
+    ]
+  },
+  {
     ignores: ['dist/*'],
   },
   {
